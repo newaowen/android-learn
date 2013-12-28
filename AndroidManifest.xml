@@ -80,6 +80,10 @@
             android:name="com.warsong.android.learn.ui.TextViewSelectableActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize" />
+         <activity
+            android:name="com.warsong.android.learn.ui.LayoutSizeActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
 
         <service
             android:name="com.warsong.android.learn.service.DemoService"

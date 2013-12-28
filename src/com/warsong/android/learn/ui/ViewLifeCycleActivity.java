@@ -6,7 +6,7 @@ import android.app.Activity;
 import android.os.Bundle;
 
 /**
- * shape绘图测试
+ * view生命周期试
  * @author newaowen@gmail.com
  */
 public class ViewLifeCycleActivity extends Activity {

@@ -35,6 +35,8 @@ public class DemoHelper {
                                             + ".ui.ImageLazyLoadActivity"));
         demos.add(new DemoItem("textview selectable测试", PackageHelper.PACKAGE_NAME
                                                         + ".ui.TextViewSelectableActivity"));
+        demos.add(new DemoItem("view大小测试", PackageHelper.PACKAGE_NAME
+                + ".ui.LayoutSizeActivity"));
 
         return demos;
     }

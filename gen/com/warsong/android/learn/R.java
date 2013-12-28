@@ -60,8 +60,8 @@ public final class R {
         public static final int x=0x7f020028;
     }
     public static final class id {
-        public static final int PullRefreshView=0x7f08002a;
-        public static final int action_settings=0x7f08002d;
+        public static final int PullRefreshView=0x7f08002c;
+        public static final int action_settings=0x7f08002f;
         public static final int afv=0x7f080006;
         public static final int album_img=0x7f08001c;
         public static final int bottom=0x7f080007;
@@ -72,6 +72,7 @@ public final class R {
         public static final int camera_preview=0x7f080011;
         public static final int cancel_btn=0x7f080019;
         public static final int capture_box=0x7f080015;
+        public static final int container=0x7f08002a;
         public static final int content=0x7f080004;
         public static final int demo_name=0x7f080027;
         public static final int ed=0x7f080001;
@@ -88,7 +89,7 @@ public final class R {
         public static final int fund_income_label=0x7f080010;
         public static final int img=0x7f08000f;
         public static final int indicator_box=0x7f080018;
-        public static final int list=0x7f08002b;
+        public static final int list=0x7f08002d;
         public static final int listView=0x7f080003;
         public static final int loading=0x7f080023;
         public static final int photo=0x7f080016;
@@ -100,11 +101,12 @@ public final class R {
         public static final int snapImg=0x7f080013;
         public static final int snap_btn=0x7f08001a;
         public static final int switch_btn=0x7f08001f;
+        public static final int target=0x7f08002b;
         public static final int text=0x7f080000;
         public static final int text_box=0x7f08000b;
         public static final int top=0x7f080005;
         public static final int top_img=0x7f080008;
-        public static final int tv=0x7f08002c;
+        public static final int tv=0x7f08002e;
         public static final int view_pager=0x7f080017;
     }
     public static final class layout {
@@ -129,13 +131,14 @@ public final class R {
         public static final int image_lazy_load=0x7f030012;
         public static final int inflate_item=0x7f030013;
         public static final int layer_list=0x7f030014;
-        public static final int local_service=0x7f030015;
-        public static final int pullrefresh=0x7f030016;
-        public static final int shape=0x7f030017;
-        public static final int textview_selectable=0x7f030018;
-        public static final int tvs_list_item=0x7f030019;
-        public static final int view_intercept=0x7f03001a;
-        public static final int view_life_cycle=0x7f03001b;
+        public static final int layout_size=0x7f030015;
+        public static final int local_service=0x7f030016;
+        public static final int pullrefresh=0x7f030017;
+        public static final int shape=0x7f030018;
+        public static final int textview_selectable=0x7f030019;
+        public static final int tvs_list_item=0x7f03001a;
+        public static final int view_intercept=0x7f03001b;
+        public static final int view_life_cycle=0x7f03001c;
     }
     public static final class menu {
         public static final int main=0x7f070000;
