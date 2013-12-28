@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+<!--     <ImageView -->
+<!--         android:layout_width="fill_parent" -->
+<!--         android:layout_height="fill_parent" -->
+<!--         android:scaleType="fitXY" -->
+<!--         android:src="@drawable/bill_photo_flinger_tp_6_0"/> -->
+    
+    <com.warsong.android.learn.widget.OvalMaskView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"  />
+    
+    <!-- 左上图片(等比) -->
+    <ImageView
+        android:id="@+id/top_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/bill_photo_flinger_tp_6_1"/>
+    
+    <!-- 左下图片(等比) -->
+    <ImageView
+        android:id="@+id/bottom_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bill_photo_flinger_tp_6_2"
+        android:scaleType="fitXY"
+        android:layout_alignParentBottom="true"/>
+    
+    <LinearLayout
+        android:id="@+id/text_box"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/expend_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4dp"
+            android:text="赚了"
+            android:textColor="#ffffff"
+            android:textSize="12sp" />
+        
+        <TextView
+            android:id="@+id/expend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:text=""
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/fund_income_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4dp"
+            android:text="收入"
+            android:textColor="#ffffff"
+            android:textSize="12sp" />
+        
+        <TextView
+            android:id="@+id/fund_income"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</RelativeLayout>

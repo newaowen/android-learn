@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:background="#ff9900" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" 
+        android:background="#00ff00">
+
+<!--         <ScrollView -->
+<!--             android:layout_width="fill_parent" -->
+<!--             android:layout_height="fill_parent" > -->
+
+<!--             <LinearLayout -->
+<!--                 android:id="@+id/box" -->
+<!--                 android:layout_width="fill_parent" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:orientation="vertical" > -->
+<!--             </LinearLayout> -->
+<!--         </ScrollView> -->
+
+        <com.warsong.android.learn.widget.CustomListView
+        android:id="@+id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#330000"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:background="#ff9900" />
+
+</LinearLayout>

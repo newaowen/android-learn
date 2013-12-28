@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:padding="20dp" >
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:background="#000000"
+        android:orientation="vertical"
+        android:gravity="center_horizontal" >
+
+        <Button
+            android:id="@+id/top"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" 
+            android:text="top" />
+
+        <com.warsong.android.learn.widget.AutoFixView
+            android:id="@+id/afv"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:background="@android:color/holo_red_light" />
+        
+        <Button
+            android:id="@+id/bottom"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="bottom" />
+    </LinearLayout>
+
+</LinearLayout>

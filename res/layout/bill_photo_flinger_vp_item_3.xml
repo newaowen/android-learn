@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    
+    <!-- 左上需水平充满屏幕 -->
+    <ImageView
+        android:id="@+id/top_img"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="fitStart"
+        android:src="@drawable/bill_photo_flinger_tp_3_0"/>
+    
+    <ImageView
+        android:id="@+id/bottom_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bill_photo_flinger_tp_3_1"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true" />
+    
+    <TextView
+        android:id="@+id/expend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textSize="32sp"
+        android:text="" />
+    
+    <TextView
+        android:id="@+id/fund_income"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textSize="32sp"
+        android:text="" />
+        
+</RelativeLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <!-- 背景特殊：点9全屏铺满 -->
+    <com.warsong.android.learn.widget.HeartMaskView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"  />
+    
+    <!-- 居底部 -->
+    <ImageView
+        android:id="@+id/bottom_img"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:scaleType="fitEnd"
+        android:src="@drawable/bill_photo_flinger_tp_1_1" />
+
+    <!-- 文字水平居中 -->
+    <LinearLayout
+        android:id="@+id/text_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/expend_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="xxx"
+            android:textColor="#ffffff"
+            android:layout_marginTop="2dp"
+            android:lineSpacingExtra="0px"
+            android:lineSpacingMultiplier="1"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/expend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#ffffff"
+            android:textSize="30sp"  />
+    </LinearLayout>
+
+</RelativeLayout>

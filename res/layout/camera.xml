@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <com.warsong.android.learn.widget.CameraPreview
+        android:id="@+id/camera_preview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"/>
+    
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="400dp"
+        android:background="#33330033"
+        android:layout_centerInParent="true"
+        android:gravity="center">
+        
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/x"/>
+        
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:background="#000000"
+        android:layout_alignParentBottom="true" >
+        
+	    <Button 
+	        android:id="@+id/snap"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="截屏"
+	        android:layout_alignParentTop="true"/>
+	    
+	    <ImageView 
+	        android:id="@+id/snapImg"
+	        android:layout_width="50dp"
+	        android:layout_height="50dp"
+	        android:layout_alignParentBottom="true"
+	        android:background="#00ff00"/>
+	    
+    </RelativeLayout>
+    
+</RelativeLayout>

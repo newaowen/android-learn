@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.warsong.android.learn"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:theme="@style/AppThemeNew" >
+        <activity
+            android:name="com.warsong.android.learn.ui.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.warsong.android.learn.ui.LayerListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.warsong.android.learn.ui.DynamicInflateActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.warsong.android.learn.ui.AutoFixViewActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.warsong.android.learn.ui.CameraPreviewActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.warsong.android.learn.ui.ViewLifeCycleActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.warsong.android.learn.ui.PullRefreshActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.warsong.android.learn.ui.BinderTestActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.warsong.android.learn.ui.ActLifeCycleActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.warsong.android.learn.ui.ViewInterceptActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.warsong.android.learn.ui.ViewAutoInterceptActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.warsong.android.learn.ui.CameraTestActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        
+        <activity
+            android:name="com.warsong.android.learn.ui.ShapeTestActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        
+         <activity
+            android:name="com.warsong.android.learn.ui.ImageLazyLoadActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+         <activity
+            android:name="com.warsong.android.learn.ui.TextViewSelectableActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+
+        <service
+            android:name="com.warsong.android.learn.service.DemoService"
+            android:process=".main" >
+            <intent-filter>
+                <action android:name="com.warsong.android.learn.service.DemoService" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>
