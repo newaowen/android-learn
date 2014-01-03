@@ -55,6 +55,7 @@ public class ViewAutoInterceptActivity extends Activity {
             }
         });
         
+        //长按如何处理
         text = (TextView) findViewById(R.id.text);
 //        gestureDetector = new GestureDetector(this, new SimpleOnGestureListener() {
 //            

@@ -13,15 +13,20 @@ import android.widget.Toast;
 import com.warsong.android.learn.R;
 import com.warsong.android.learn.service.LocalService;
 import com.warsong.android.learn.service.LocalService.LocalBinder;
+import com.warsong.android.learn.widget.PrintTextView;
 
 public class LocalServiceActivity extends Activity {
     LocalService mService;
     boolean mBound = false;
+    
+    private PrintTextView tv;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.local_service);
+        
+        tv = (PrintTextView) findViewById(R.id.tv);
     }
 
     @Override
@@ -60,6 +65,7 @@ public class LocalServiceActivity extends Activity {
         @Override
         public void onServiceConnected(ComponentName className,
                 IBinder service) {
+        	tv.print("service connected");
             // We've bound to LocalService, cast the IBinder and get LocalService instance
             LocalBinder binder = (LocalBinder) service;
             mService = binder.getService();

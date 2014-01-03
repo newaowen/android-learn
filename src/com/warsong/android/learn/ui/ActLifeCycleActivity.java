@@ -13,7 +13,7 @@ import com.warsong.android.learn.R;
 
 /**
  * 界面生命周期
- * 打开节目：oncreate -> onstart -> onresume
+ * 打开界面：oncreate -> onstart -> onresume
  * 跳转出去: onpause -> onSaveInstance -> onStop
  * 按home出去: onpause -> onSaveInstance -> onStop
  * 从跳出去的界面返回到：onRestart -> onstart -> onresume

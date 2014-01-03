@@ -21,7 +21,6 @@
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -51,6 +50,10 @@
             android:windowSoftInputMode="adjustResize" />
         <activity
             android:name="com.warsong.android.learn.ui.BinderTestActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.warsong.android.learn.ui.LocalServiceActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize" />
         <activity
@@ -84,7 +87,14 @@
             android:name="com.warsong.android.learn.ui.LayoutSizeActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize" />
-
+ 		<activity
+            android:name="com.warsong.android.learn.ui.MemoryUseActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+ 
+ 
+         <service
+            android:name="com.warsong.android.learn.service.LocalService" />
         <service
             android:name="com.warsong.android.learn.service.DemoService"
             android:process=".main" >

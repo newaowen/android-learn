@@ -1,5 +1,7 @@
 package com.warsong.android.learn.ui;
 
+import java.util.List;
+
 import android.app.Activity;
 import android.content.Intent;
 import android.database.Cursor;
@@ -76,9 +78,9 @@ public class CameraTestActivity extends Activity {
     private GestureDetector gestureDetector;
     //TODO 分享标题等
 
-    //private BillShareHelper shareHelper;
-
     private static final int PICK_IMAGE_REQUEST = 1;
+    
+    private List<String> supportFlashModes = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -329,6 +331,7 @@ public class CameraTestActivity extends Activity {
 
     private void handleDetachCamera() {
         previewController.detachCamera();
+        supportFlashModes = null;
     }
 
     /**
@@ -451,10 +454,16 @@ public class CameraTestActivity extends Activity {
     private void updateFlashBtn() {
         if (previewController.getCurrentFacing() == CameraHelper.CAMERA_FACING_FRONT) {
             setFlashBtnVisibility(View.INVISIBLE);
+            supportFlashModes = null;
         } else {
-            setFlashBtnVisibility(View.VISIBLE);
-            //切换到当前闪光灯状态
-            setCameraFlashMode(previewController.getDefaultFlashMode());
+        	supportFlashModes = previewController.getSupportFlashMode();
+        	if (supportFlashModes != null) {
+	            setFlashBtnVisibility(View.VISIBLE);
+	            //切换到当前闪光灯状态
+	            setCameraFlashMode(previewController.getDefaultFlashMode());
+        	} else {
+        		setFlashBtnVisibility(View.INVISIBLE);
+        	}
         }
     }
 

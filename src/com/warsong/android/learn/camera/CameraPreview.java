@@ -446,7 +446,6 @@ public class CameraPreview extends FrameLayout implements SurfaceHolder.Callback
                             h = getWidth();
                         }
                         Bitmap bmp = GeneralUtil.decodeImageBytes(data, w, h);
-                        callback.run(bmp);
                         if (isCameraRotated()) {
                             //拍照生成的图片处理
                             int rotataion = CameraHelper.getCameraOrientation(cameraId);
@@ -465,6 +464,10 @@ public class CameraPreview extends FrameLayout implements SurfaceHolder.Callback
                         //由于图片和preview分辨率可能不一致，需要将图片centerCrop到preview的分辨率上
                         //centerCropCameraPicture(bmp);
                         callback.run(bmp);
+                    } catch (Error err) {
+                    	err.printStackTrace();
+                        //异常则重新打开相机
+                        startPreview();
                     } catch (Exception e) {
                         e.printStackTrace();
                         //异常则重新打开相机
@@ -692,6 +695,17 @@ public class CameraPreview extends FrameLayout implements SurfaceHolder.Callback
             }
         }
 
+        public List<String> getSupportFlashMode() {
+        	List<String> result = null;
+            if (preview.camera != null) {
+                Parameters p = preview.camera.getParameters();
+                if (p != null) {
+                    result = p.getSupportedFlashModes();
+                }
+            }
+            return result;
+        }
+        
         /**
          * 默认闪光灯模式
          * @return
