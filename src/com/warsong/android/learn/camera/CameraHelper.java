@@ -69,10 +69,10 @@ public class CameraHelper {
     /**
      * 设备是否支持前置摄像头
      * api 9前虽然sdk不支持摄像头，但设备可能提供了前置摄像头
+     * ［这种方法还是有缺陷，少数奇葩手机(coolpad)不支持这种方式，草他大爷的]
      * @param context
      * @return
      */
-    @SuppressLint("InlinedApi")
     public static boolean isSupportFrontCamera(Context context) {
         PackageManager pm = context.getPackageManager();
         return pm.hasSystemFeature(PackageManager.FEATURE_CAMERA_FRONT);

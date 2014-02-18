@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <View
+        android:id="@+id/left"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:background="#0000ff" />
+
+    <View
+        android:id="@+id/right"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="#ff0000" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/left"
+        android:layout_toLeftOf="@id/right"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:text="如今如今如今如今如今如今如今如今如今如今如今如今如今如今是娃娃你关系" />
+
+</RelativeLayout>

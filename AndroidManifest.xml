@@ -12,6 +12,8 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:allowBackup="true"
         android:label="@string/app_name"
@@ -21,6 +23,7 @@
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -69,32 +72,56 @@
             android:name="com.warsong.android.learn.ui.CameraTestActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize" />
-        
         <activity
             android:name="com.warsong.android.learn.ui.ShapeTestActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize" />
-        
-         <activity
+        <activity
             android:name="com.warsong.android.learn.ui.ImageLazyLoadActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize" />
-         <activity
+        <activity
             android:name="com.warsong.android.learn.ui.TextViewSelectableActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize" />
-         <activity
+        <activity
             android:name="com.warsong.android.learn.ui.LayoutSizeActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize" />
- 		<activity
+        <activity
             android:name="com.warsong.android.learn.ui.MemoryUseActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize" />
- 
- 
-         <service
-            android:name="com.warsong.android.learn.service.LocalService" />
+        <activity
+            android:name="com.warsong.android.learn.ui.ScrollWebViewActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.warsong.android.learn.ui.DashLineActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.warsong.android.learn.ui.RoundClipActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.warsong.android.learn.ui.LinearTextViewActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.warsong.android.learn.ui.ScrollViewPagerActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.warsong.android.learn.ui.WindowTestActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.warsong.android.learn.ui.TabScrollWebViewActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+
+        <service android:name="com.warsong.android.learn.service.LocalService" />
         <service
             android:name="com.warsong.android.learn.service.DemoService"
             android:process=".main" >

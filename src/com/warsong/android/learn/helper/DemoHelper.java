@@ -36,7 +36,13 @@ public class DemoHelper {
 				+ ".ui.TextViewSelectableActivity"));
 		demos.add(new DemoItem("view尺寸测试", PackageHelper.PACKAGE_NAME + ".ui.LayoutSizeActivity"));
 		demos.add(new DemoItem("内存占用测试", PackageHelper.PACKAGE_NAME + ".ui.MemoryUseActivity"));
-
+		demos.add(new DemoItem("scrollwebview测试", PackageHelper.PACKAGE_NAME + ".ui.ScrollWebViewActivity"));
+		demos.add(new DemoItem("dashline测试", PackageHelper.PACKAGE_NAME + ".ui.DashLineActivity"));
+		demos.add(new DemoItem("round clip测试", PackageHelper.PACKAGE_NAME + ".ui.RoundClipActivity"));
+		demos.add(new DemoItem("LinearTextView测试", PackageHelper.PACKAGE_NAME + ".ui.LinearTextViewActivity"));
+		demos.add(new DemoItem("scroll viewpager测试", PackageHelper.PACKAGE_NAME + ".ui.ScrollViewPagerActivity"));
+		demos.add(new DemoItem("window测试", PackageHelper.PACKAGE_NAME + ".ui.WindowTestActivity"));
+		demos.add(new DemoItem("tab scroll webview测试", PackageHelper.PACKAGE_NAME + ".ui.TabScrollWebViewActivity"));
 		return demos;
 	}
 }

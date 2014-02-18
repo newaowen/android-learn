@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff" >
+
+    <RelativeLayout
+        android:id="@+id/main_content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#ffffff" >
+
+        <com.warsong.android.learn.widget.ClipImageView
+            android:id="@+id/up_box"
+            android:layout_width="fill_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/rcorner"
+            custom:percentage="0.4"
+            custom:direction="vertical" />
+
+        <LinearLayout
+            android:id="@+id/content_box"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/up_box"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="按钮" />
+            
+            <com.warsong.android.learn.widget.NumberCountView
+                android:id="@+id/ncv"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:background="@drawable/border"
+                custom:start="5"
+                custom:step="1"
+                custom:max="10"
+                custom:min="0" />
+
+            <!-- <WebView -->
+            <!-- android:id="@+id/wv" -->
+            <!-- android:layout_width="fill_parent" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:layout_below="@id/btn" /> -->
+
+            <View
+                android:id="@+id/down"
+                android:layout_width="fill_parent"
+                android:layout_height="500dp"
+                android:layout_below="@id/btn"
+                android:background="#ff0000" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

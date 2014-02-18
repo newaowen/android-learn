@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="clip_image_view">
+        <attr name="percentage" format="float" />
+        <attr name="direction">
+            <flag name="horizontal" value="0x1" />
+            <flag name="vertical" value="0x2" />
+        </attr>
+    </declare-styleable>
+    
+    <declare-styleable name="number_count_view">
+        <attr name="start" format="integer" />
+        <attr name="min" format="integer" />
+        <attr name="max" format="integer" />
+        <attr name="step" format="integer" />
+        <attr name="valueTextSize" format="dimension|reference" />
+    </declare-styleable>
+
+</resources>

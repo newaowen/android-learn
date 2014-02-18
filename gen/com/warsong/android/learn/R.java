@@ -9,12 +9,70 @@ package com.warsong.android.learn;
 
 public final class R {
     public static final class attr {
+        /** <p>Must be one or more (separated by '|') of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>horizontal</code></td><td>0x1</td><td></td></tr>
+<tr><td><code>vertical</code></td><td>0x2</td><td></td></tr>
+</table>
+         */
+        public static final int direction=0x7f010001;
+        /** <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int max=0x7f010004;
+        /** <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int min=0x7f010003;
+        /** <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int percentage=0x7f010000;
+        /** <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int start=0x7f010002;
+        /** <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int step=0x7f010005;
+        /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+         */
+        public static final int valueTextSize=0x7f010006;
     }
     public static final class dimen {
         /**  Default screen margins, per the Android Design guidelines. 
          */
-        public static final int activity_horizontal_margin=0x7f040000;
-        public static final int activity_vertical_margin=0x7f040001;
+        public static final int activity_horizontal_margin=0x7f050000;
+        public static final int activity_vertical_margin=0x7f050001;
     }
     public static final class drawable {
         public static final int agentpayicon=0x7f020000;
@@ -51,65 +109,83 @@ public final class R {
         public static final int flow_to_future_2=0x7f02001f;
         public static final int images=0x7f020020;
         public static final int line_active=0x7f020021;
-        public static final int point_current=0x7f020022;
-        public static final int point_past=0x7f020023;
-        public static final int right_arrow=0x7f020024;
-        public static final int shape=0x7f020025;
-        public static final int statement_icon_clicked=0x7f020026;
-        public static final int wow=0x7f020027;
-        public static final int x=0x7f020028;
+        public static final int number_count_view_border=0x7f020022;
+        public static final int point_current=0x7f020023;
+        public static final int point_past=0x7f020024;
+        public static final int rcorner=0x7f020025;
+        public static final int right_arrow=0x7f020026;
+        public static final int shape=0x7f020027;
+        public static final int statement_icon_clicked=0x7f020028;
+        public static final int wow=0x7f020029;
+        public static final int x=0x7f02002a;
     }
     public static final class id {
-        public static final int PullRefreshView=0x7f08002d;
-        public static final int action_settings=0x7f080031;
-        public static final int afv=0x7f080006;
-        public static final int album_img=0x7f08001c;
-        public static final int bottom=0x7f080007;
-        public static final int bottom_img=0x7f080009;
-        public static final int box=0x7f080029;
-        public static final int btn=0x7f080002;
-        public static final int camera_control_box=0x7f08001d;
-        public static final int camera_preview=0x7f080011;
-        public static final int cancel_btn=0x7f080019;
-        public static final int capture_box=0x7f080015;
-        public static final int clear=0x7f08002f;
-        public static final int container=0x7f08002a;
-        public static final int content=0x7f080004;
-        public static final int demo_name=0x7f080027;
-        public static final int ed=0x7f080001;
-        public static final int expend=0x7f08000a;
-        public static final int expend_box=0x7f08000e;
-        public static final int expend_label=0x7f08000c;
-        public static final int flash_btn=0x7f08001e;
-        public static final int framework_pullrefresh_indicator=0x7f080025;
-        public static final int framework_pullrefresh_loading=0x7f080021;
-        public static final int framework_pullrefresh_normal=0x7f080024;
-        public static final int framework_pullrefresh_progress=0x7f080022;
-        public static final int framework_pullrefresh_prompt=0x7f080026;
-        public static final int fund_income=0x7f08000d;
-        public static final int fund_income_label=0x7f080010;
-        public static final int img=0x7f08000f;
-        public static final int indicator_box=0x7f080018;
-        public static final int list=0x7f08002e;
-        public static final int listView=0x7f080003;
-        public static final int loading=0x7f080023;
-        public static final int log=0x7f080030;
-        public static final int photo=0x7f080016;
-        public static final int photo_box=0x7f080014;
-        public static final int refresh_overView=0x7f080020;
-        public static final int right_image=0x7f080028;
-        public static final int share_btn=0x7f08001b;
-        public static final int snap=0x7f080012;
-        public static final int snapImg=0x7f080013;
-        public static final int snap_btn=0x7f08001a;
-        public static final int switch_btn=0x7f08001f;
-        public static final int target=0x7f08002b;
-        public static final int text=0x7f080000;
-        public static final int text_box=0x7f08000b;
-        public static final int top=0x7f080005;
-        public static final int top_img=0x7f080008;
-        public static final int tv=0x7f08002c;
-        public static final int view_pager=0x7f080017;
+        public static final int PullRefreshView=0x7f040033;
+        public static final int action_settings=0x7f040041;
+        public static final int add=0x7f040032;
+        public static final int afv=0x7f040008;
+        public static final int album_img=0x7f04001e;
+        public static final int bottom=0x7f040009;
+        public static final int bottom_img=0x7f04000b;
+        public static final int box=0x7f04002b;
+        public static final int btn=0x7f040004;
+        public static final int btnOne=0x7f040039;
+        public static final int btnTwo=0x7f04003a;
+        public static final int camera_control_box=0x7f04001f;
+        public static final int camera_preview=0x7f040013;
+        public static final int cancel_btn=0x7f04001b;
+        public static final int capture_box=0x7f040017;
+        public static final int clear=0x7f04003f;
+        public static final int container=0x7f04002c;
+        public static final int content=0x7f040006;
+        public static final int content_box=0x7f040036;
+        public static final int demo_name=0x7f040029;
+        public static final int down=0x7f040038;
+        public static final int ed=0x7f040003;
+        public static final int expend=0x7f04000c;
+        public static final int expend_box=0x7f040010;
+        public static final int expend_label=0x7f04000e;
+        public static final int flash_btn=0x7f040020;
+        public static final int framework_pullrefresh_indicator=0x7f040027;
+        public static final int framework_pullrefresh_loading=0x7f040023;
+        public static final int framework_pullrefresh_normal=0x7f040026;
+        public static final int framework_pullrefresh_progress=0x7f040024;
+        public static final int framework_pullrefresh_prompt=0x7f040028;
+        public static final int fund_income=0x7f04000f;
+        public static final int fund_income_label=0x7f040012;
+        public static final int horizontal=0x7f040000;
+        public static final int img=0x7f040011;
+        public static final int indicator_box=0x7f04001a;
+        public static final int left=0x7f04002e;
+        public static final int list=0x7f04003e;
+        public static final int listView=0x7f040005;
+        public static final int loading=0x7f040025;
+        public static final int log=0x7f040040;
+        public static final int main_content=0x7f040034;
+        public static final int ncv=0x7f040037;
+        public static final int photo=0x7f040018;
+        public static final int photo_box=0x7f040016;
+        public static final int refresh_overView=0x7f040022;
+        public static final int right=0x7f04002f;
+        public static final int right_image=0x7f04002a;
+        public static final int share_btn=0x7f04001d;
+        public static final int snap=0x7f040014;
+        public static final int snapImg=0x7f040015;
+        public static final int snap_btn=0x7f04001c;
+        public static final int substract=0x7f040031;
+        public static final int switch_btn=0x7f040021;
+        public static final int target=0x7f04002d;
+        public static final int text=0x7f040002;
+        public static final int text_box=0x7f04000d;
+        public static final int top=0x7f040007;
+        public static final int top_img=0x7f04000a;
+        public static final int tv=0x7f040030;
+        public static final int up_box=0x7f040035;
+        public static final int vertical=0x7f040001;
+        public static final int view_pager=0x7f040019;
+        public static final int webviewBox=0x7f04003b;
+        public static final int webviewOne=0x7f04003c;
+        public static final int webviewTwo=0x7f04003d;
     }
     public static final class layout {
         public static final int act_life_cycle=0x7f030000;
@@ -127,29 +203,38 @@ public final class R {
         public static final int binder_test=0x7f03000c;
         public static final int camera=0x7f03000d;
         public static final int camera_test=0x7f03000e;
-        public static final int default_overview=0x7f03000f;
-        public static final int demo_list_item=0x7f030010;
-        public static final int dynamic_inflate=0x7f030011;
-        public static final int image_lazy_load=0x7f030012;
-        public static final int inflate_item=0x7f030013;
-        public static final int layer_list=0x7f030014;
-        public static final int layout_size=0x7f030015;
-        public static final int local_service=0x7f030016;
-        public static final int memory_use=0x7f030017;
-        public static final int pullrefresh=0x7f030018;
-        public static final int shape=0x7f030019;
-        public static final int textview_selectable=0x7f03001a;
-        public static final int tvs_list_item=0x7f03001b;
-        public static final int view_intercept=0x7f03001c;
-        public static final int view_life_cycle=0x7f03001d;
+        public static final int dash_line=0x7f03000f;
+        public static final int default_overview=0x7f030010;
+        public static final int demo_list_item=0x7f030011;
+        public static final int dynamic_inflate=0x7f030012;
+        public static final int image_lazy_load=0x7f030013;
+        public static final int inflate_item=0x7f030014;
+        public static final int layer_list=0x7f030015;
+        public static final int layout_size=0x7f030016;
+        public static final int linear_textview=0x7f030017;
+        public static final int local_service=0x7f030018;
+        public static final int memory_use=0x7f030019;
+        public static final int number_count_view=0x7f03001a;
+        public static final int pullrefresh=0x7f03001b;
+        public static final int round_clip=0x7f03001c;
+        public static final int scroll_view_pager_item=0x7f03001d;
+        public static final int scroll_viewpager=0x7f03001e;
+        public static final int scroll_web_view=0x7f03001f;
+        public static final int shape=0x7f030020;
+        public static final int tab_scroll_webview=0x7f030021;
+        public static final int textview_selectable=0x7f030022;
+        public static final int tvs_list_item=0x7f030023;
+        public static final int view_intercept=0x7f030024;
+        public static final int view_life_cycle=0x7f030025;
+        public static final int window_test=0x7f030026;
     }
     public static final class menu {
-        public static final int main=0x7f070000;
+        public static final int main=0x7f080000;
     }
     public static final class string {
-        public static final int action_settings=0x7f050001;
-        public static final int app_name=0x7f050000;
-        public static final int hello_world=0x7f050002;
+        public static final int action_settings=0x7f060001;
+        public static final int app_name=0x7f060000;
+        public static final int hello_world=0x7f060002;
     }
     public static final class style {
         /** 
@@ -162,7 +247,146 @@ public final class R {
             backward-compatibility can go here.
         
          */
-        public static final int AppBaseTheme=0x7f060000;
-        public static final int AppThemeNew=0x7f060001;
+        public static final int AppBaseTheme=0x7f070000;
+        public static final int AppThemeNew=0x7f070001;
     }
+    public static final class styleable {
+        /** Attributes that can be used with a clip_image_view.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #clip_image_view_direction com.warsong.android.learn:direction}</code></td><td></td></tr>
+           <tr><td><code>{@link #clip_image_view_percentage com.warsong.android.learn:percentage}</code></td><td></td></tr>
+           </table>
+           @see #clip_image_view_direction
+           @see #clip_image_view_percentage
+         */
+        public static final int[] clip_image_view = {
+            0x7f010000, 0x7f010001
+        };
+        /**
+          <p>This symbol is the offset where the {@link com.warsong.android.learn.R.attr#direction}
+          attribute's value can be found in the {@link #clip_image_view} array.
+
+
+          <p>Must be one or more (separated by '|') of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>horizontal</code></td><td>0x1</td><td></td></tr>
+<tr><td><code>vertical</code></td><td>0x2</td><td></td></tr>
+</table>
+          @attr name com.warsong.android.learn:direction
+        */
+        public static final int clip_image_view_direction = 1;
+        /**
+          <p>This symbol is the offset where the {@link com.warsong.android.learn.R.attr#percentage}
+          attribute's value can be found in the {@link #clip_image_view} array.
+
+
+          <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.warsong.android.learn:percentage
+        */
+        public static final int clip_image_view_percentage = 0;
+        /** Attributes that can be used with a number_count_view.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #number_count_view_max com.warsong.android.learn:max}</code></td><td></td></tr>
+           <tr><td><code>{@link #number_count_view_min com.warsong.android.learn:min}</code></td><td></td></tr>
+           <tr><td><code>{@link #number_count_view_start com.warsong.android.learn:start}</code></td><td></td></tr>
+           <tr><td><code>{@link #number_count_view_step com.warsong.android.learn:step}</code></td><td></td></tr>
+           <tr><td><code>{@link #number_count_view_valueTextSize com.warsong.android.learn:valueTextSize}</code></td><td></td></tr>
+           </table>
+           @see #number_count_view_max
+           @see #number_count_view_min
+           @see #number_count_view_start
+           @see #number_count_view_step
+           @see #number_count_view_valueTextSize
+         */
+        public static final int[] number_count_view = {
+            0x7f010002, 0x7f010003, 0x7f010004, 0x7f010005,
+            0x7f010006
+        };
+        /**
+          <p>This symbol is the offset where the {@link com.warsong.android.learn.R.attr#max}
+          attribute's value can be found in the {@link #number_count_view} array.
+
+
+          <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.warsong.android.learn:max
+        */
+        public static final int number_count_view_max = 2;
+        /**
+          <p>This symbol is the offset where the {@link com.warsong.android.learn.R.attr#min}
+          attribute's value can be found in the {@link #number_count_view} array.
+
+
+          <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.warsong.android.learn:min
+        */
+        public static final int number_count_view_min = 1;
+        /**
+          <p>This symbol is the offset where the {@link com.warsong.android.learn.R.attr#start}
+          attribute's value can be found in the {@link #number_count_view} array.
+
+
+          <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.warsong.android.learn:start
+        */
+        public static final int number_count_view_start = 0;
+        /**
+          <p>This symbol is the offset where the {@link com.warsong.android.learn.R.attr#step}
+          attribute's value can be found in the {@link #number_count_view} array.
+
+
+          <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.warsong.android.learn:step
+        */
+        public static final int number_count_view_step = 3;
+        /**
+          <p>This symbol is the offset where the {@link com.warsong.android.learn.R.attr#valueTextSize}
+          attribute's value can be found in the {@link #number_count_view} array.
+
+
+          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+          @attr name com.warsong.android.learn:valueTextSize
+        */
+        public static final int number_count_view_valueTextSize = 4;
+    };
 }

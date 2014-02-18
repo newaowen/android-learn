@@ -4,8 +4,9 @@
     android:layout_height="fill_parent"
     android:orientation="vertical" >
 
-   <com.warsong.android.learn.widget.LifeCycleView
-       android:layout_width="fill_parent"
-       android:layout_height="fill_parent"/>
+    <TextView
+        android:text="window_test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
 
 </LinearLayout>
